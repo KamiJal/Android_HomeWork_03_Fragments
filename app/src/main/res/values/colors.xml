@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="youtubeRed">#FF0000</color>
-    <color name="youtubeGrey">#646464</color>
-    <color name="youtubeHr">#969696</color>
+    <color name="youtubeGreyDark">#646464</color>
+    <color name="youtubeGreyMid">#7D7D7D</color>
+    <color name="youtubeGreyLight">#969696</color>
 </resources>
