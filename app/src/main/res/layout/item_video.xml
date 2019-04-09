@@ -7,31 +7,31 @@
     android:paddingBottom="16dp">
 
     <ImageView
-        android:id="@+id/home_item_image_title_image"
+        android:id="@+id/item_video_img_preview"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:background="@color/youtubeGreyMid"
-        android:contentDescription="@string/home_item_image"
+        android:contentDescription="@string/item_video_preview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <ImageView
-        android:id="@+id/home_item_image_channel_owner_logo"
+        android:id="@+id/item_video_img_channel_owner_logo"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:background="@color/youtubeGreyDark"
-        android:contentDescription="@string/home_item_channel_owner_logo"
+        android:contentDescription="@string/item_video_channel_owner_logo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_item_image_title_image"
+        app:layout_constraintTop_toBottomOf="@+id/item_video_img_preview"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/home_item_text_video_title"
+        android:id="@+id/item_video_txt_video_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -41,14 +41,14 @@
         android:layout_marginRight="8dp"
         android:textColor="@android:color/black"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/home_item_image_more_actions"
+        app:layout_constraintEnd_toStartOf="@+id/item_video_img_more_actions"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/home_item_image_channel_owner_logo"
-        app:layout_constraintTop_toBottomOf="@+id/home_item_image_title_image"
+        app:layout_constraintStart_toEndOf="@+id/item_video_img_channel_owner_logo"
+        app:layout_constraintTop_toBottomOf="@+id/item_video_img_preview"
         tools:text="Title of the video" />
 
     <TextView
-        android:id="@+id/home_item_text_additional_info"
+        android:id="@+id/item_video_txt_additional_info"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -58,23 +58,23 @@
         android:layout_marginRight="8dp"
         android:textColor="@color/youtubeGreyMid"
         android:textSize="8sp"
-        app:layout_constraintEnd_toStartOf="@+id/home_item_image_more_actions"
+        app:layout_constraintEnd_toStartOf="@+id/item_video_img_more_actions"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/home_item_image_channel_owner_logo"
-        app:layout_constraintTop_toBottomOf="@+id/home_item_text_video_title"
+        app:layout_constraintStart_toEndOf="@+id/item_video_img_channel_owner_logo"
+        app:layout_constraintTop_toBottomOf="@+id/item_video_txt_video_title"
         tools:ignore="SmallSp"
         tools:text="Channel name • Views count • posted time" />
 
     <ImageView
-        android:id="@+id/home_item_image_more_actions"
+        android:id="@+id/item_video_img_more_actions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:contentDescription="@string/home_item_more_actions"
+        android:contentDescription="@string/item_video_more_actions"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_item_image_title_image"
+        app:layout_constraintTop_toBottomOf="@+id/item_video_img_preview"
         app:srcCompat="@drawable/ic_more_vert"
         tools:ignore="VectorDrawableCompat" />
 

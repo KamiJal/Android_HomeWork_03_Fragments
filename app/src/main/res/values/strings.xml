@@ -6,7 +6,7 @@
     <string name="inbox">Inbox</string>
     <string name="library">Library</string>
 
-    <string name="home_item_image">Home Item Image</string>
-    <string name="home_item_channel_owner_logo">Home Item Channel Owner Logo</string>
-    <string name="home_item_more_actions">Home Item More Actions</string>
+    <string name="item_video_preview">Item Video Preview</string>
+    <string name="item_video_channel_owner_logo">Item Video Channel Owner Logo</string>
+    <string name="item_video_more_actions">Item Video More Actions</string>
 </resources>
