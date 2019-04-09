@@ -54,6 +54,10 @@ class VideoItemViewHolder extends BaseItemViewHolder {
         });
     }
 
+    void setChannelOwnerLogo(int resId){
+        this.channelOwnerLogo.setImageResource(resId);
+    }
+
     void setPreviewImage(int resId) {
         this.preview.setImageResource(resId);
     }

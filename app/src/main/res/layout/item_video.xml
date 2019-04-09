@@ -8,8 +8,9 @@
 
     <ImageView
         android:id="@+id/item_video_img_preview"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:scaleType="centerCrop"
         android:background="@color/youtubeGreyMid"
         android:contentDescription="@string/item_video_preview"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,6 +22,7 @@
         android:id="@+id/item_video_img_channel_owner_logo"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:scaleType="centerCrop"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"

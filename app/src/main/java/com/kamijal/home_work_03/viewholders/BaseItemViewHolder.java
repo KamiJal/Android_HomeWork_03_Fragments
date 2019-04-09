@@ -6,11 +6,11 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-abstract class BaseItemViewHolder extends RecyclerView.ViewHolder {
+public abstract class BaseItemViewHolder extends RecyclerView.ViewHolder {
 
     protected final Context context;
 
-    BaseItemViewHolder(@NonNull View itemView) {
+    public BaseItemViewHolder(@NonNull View itemView) {
         super(itemView);
         context = itemView.getContext();
     }
