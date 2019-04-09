@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 abstract class BaseItemViewHolder extends RecyclerView.ViewHolder {
 
-    private final Context context;
+    protected final Context context;
 
     BaseItemViewHolder(@NonNull View itemView) {
         super(itemView);
