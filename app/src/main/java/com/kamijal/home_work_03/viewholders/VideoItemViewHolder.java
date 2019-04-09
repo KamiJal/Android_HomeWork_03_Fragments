@@ -10,7 +10,7 @@ import com.kamijal.home_work_03.R;
 
 import androidx.annotation.NonNull;
 
-class VideoItemViewHolder extends BaseItemViewHolder {
+public class VideoItemViewHolder extends BaseItemViewHolder {
 
     private static final String TAG = "VideoItemViewHolder";
 
@@ -21,7 +21,7 @@ class VideoItemViewHolder extends BaseItemViewHolder {
     private final TextView title;
     private final TextView additionalInfo;
 
-    VideoItemViewHolder(@NonNull View itemView) {
+    public VideoItemViewHolder(@NonNull View itemView) {
         super(itemView);
 
         this.preview = itemView.findViewById(R.id.item_video_img_preview);
@@ -33,15 +33,15 @@ class VideoItemViewHolder extends BaseItemViewHolder {
         Log.d(TAG, "VideoItemViewHolder: created.");
     }
 
-    void setTitle(final String title) {
+    public void setTitle(final String title) {
         this.title.setText(title);
     }
 
-    void setAdditionalInfo(final String additionalInfo) {
+    public void setAdditionalInfo(final String additionalInfo) {
         this.additionalInfo.setText(additionalInfo);
     }
 
-    void setMoreActions() {
+    public void setMoreActions() {
         this.moreActions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,11 +54,11 @@ class VideoItemViewHolder extends BaseItemViewHolder {
         });
     }
 
-    void setChannelOwnerLogo(int resId){
+    public void setChannelOwnerLogo(int resId) {
         this.channelOwnerLogo.setImageResource(resId);
     }
 
-    void setPreviewImage(int resId) {
+    public void setPreviewImage(int resId) {
         this.preview.setImageResource(resId);
     }
 
