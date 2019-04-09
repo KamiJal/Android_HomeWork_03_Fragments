@@ -9,4 +9,5 @@
     <string name="item_video_preview">Item Video Preview</string>
     <string name="item_video_channel_owner_logo">Item Video Channel Owner Logo</string>
     <string name="item_video_more_actions">Item Video More Actions</string>
+    <string name="youtube_logo">Youtube Logo</string>
 </resources>

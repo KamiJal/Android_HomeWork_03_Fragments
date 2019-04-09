@@ -28,4 +28,27 @@
             android:orientation="horizontal" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+    <ImageView
+        android:id="@+id/youtube_logo"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@string/youtube_logo" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.kamijal.home_work_03.fragments.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtube_logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
