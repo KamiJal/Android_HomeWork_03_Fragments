@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="16dp">
+    android:paddingBottom="40dp">
 
     <ImageView
         android:id="@+id/item_video_img_preview"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:scaleType="centerCrop"
         android:background="@color/youtubeGreyMid"
         android:contentDescription="@string/item_video_preview"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,12 +22,12 @@
         android:id="@+id/item_video_img_channel_owner_logo"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:scaleType="centerCrop"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:background="@color/youtubeGreyDark"
         android:contentDescription="@string/item_video_channel_owner_logo"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_video_img_preview"
         tools:srcCompat="@tools:sample/avatars" />
