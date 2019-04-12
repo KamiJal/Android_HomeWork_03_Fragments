@@ -9,9 +9,7 @@ import java.util.List;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-public class HomeFragmentViewModel extends BaseViewModel {
-
-    private static final String TAG = "HomeFragmentViewModel";
+public class VideoFragmentViewModel extends BaseViewModel {
 
     private final MutableLiveData<List<Video>> mVideoList = new MutableLiveData<>();
 

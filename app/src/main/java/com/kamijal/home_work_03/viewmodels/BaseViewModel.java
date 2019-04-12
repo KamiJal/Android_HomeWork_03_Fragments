@@ -8,13 +8,17 @@ import androidx.lifecycle.ViewModel;
 
 public abstract class BaseViewModel extends ViewModel {
 
-    private static final String TAG = "BaseViewModel";
+    static String TAG;
 
-    protected RepositoryInterface repository;
+    BaseViewModel() {
+        TAG = this.getClass().getSimpleName();
+    }
+
+    RepositoryInterface repository;
 
     public void init(RepositoryInterface repository) {
-        this.repository = repository;
+        Log.d(TAG, "init: called.");
 
-        Log.d(TAG, "init: ended.");
+        this.repository = repository;
     }
 }

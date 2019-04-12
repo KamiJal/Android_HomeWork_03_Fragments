@@ -8,9 +8,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseItemViewHolder> {
 
-    protected List<T> dataSet;
+    static String TAG;
+    List<T> dataSet;
 
-    BaseAdapter(List<T> dataSet) {
+    BaseAdapter() {
+        TAG = this.getClass().getSimpleName();
+    }
+
+    public void setDataSet(List<T> dataSet) {
         this.dataSet = dataSet;
     }
 
