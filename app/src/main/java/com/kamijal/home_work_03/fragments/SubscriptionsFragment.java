@@ -17,11 +17,9 @@ import com.kamijal.home_work_03.R;
  */
 public class SubscriptionsFragment extends Fragment {
 
-
     public SubscriptionsFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
