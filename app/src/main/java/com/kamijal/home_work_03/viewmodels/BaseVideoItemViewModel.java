@@ -9,7 +9,7 @@ import java.util.List;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-public class VideoFragmentViewModel extends BaseViewModel {
+public class BaseVideoItemViewModel extends BaseViewModel {
 
     private final MutableLiveData<List<Video>> mVideoList = new MutableLiveData<>();
 

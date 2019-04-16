@@ -1,8 +1,10 @@
 package com.kamijal.home_work_03.factories;
 
+import com.kamijal.home_work_03.viewmodels.TrendingFragmentViewModel;
 import com.kamijal.home_work_03.repositories.RepositoryInterface;
 import com.kamijal.home_work_03.viewmodels.BaseViewModel;
-import com.kamijal.home_work_03.viewmodels.VideoFragmentViewModel;
+import com.kamijal.home_work_03.viewmodels.HomeFragmentViewModel;
+import com.kamijal.home_work_03.viewmodels.SubscriptionsFragmentViewModel;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
@@ -22,12 +24,16 @@ public class ViewModelsFactory {
 
         switch (fragment.getClass().getSimpleName()) {
             default:
-            case "HomeFragment":
+            case "HomeFragment":{
+                model = ViewModelProviders.of(fragment).get(HomeFragmentViewModel.class);
+            }
+            break;
             case "TrendingFragment": {
-                model = ViewModelProviders.of(fragment).get(VideoFragmentViewModel.class);
+                model = ViewModelProviders.of(fragment).get(TrendingFragmentViewModel.class);
             }
             break;
             case "SubscriptionsFragment": {
+                model = ViewModelProviders.of(fragment).get(SubscriptionsFragmentViewModel.class);
             }
             break;
             case "InboxFragment": {

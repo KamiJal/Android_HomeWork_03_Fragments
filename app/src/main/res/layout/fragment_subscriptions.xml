@@ -24,7 +24,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingLeft="@dimen/top_bar_content_wrapper_padding"
-            android:paddingRight="@dimen/top_bar_content_wrapper_padding"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/fragment_subscriptions_top_bar_button_wrapper"
             app:layout_constraintStart_toStartOf="parent"
