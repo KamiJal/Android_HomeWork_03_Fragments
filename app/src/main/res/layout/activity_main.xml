@@ -23,7 +23,7 @@
         <LinearLayout
             android:id="@+id/hr"
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="@dimen/hr_height"
             android:background="@color/youtubeGreyLight"
             android:orientation="horizontal" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
@@ -49,16 +49,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/youtube_logo" />
-
-    <!--<fragment-->
-    <!--android:id="@+id/fragment_container"-->
-    <!--android:name="com.kamijal.home_work_03.fragments.HomeFragment"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="0dp"-->
-    <!--android:layout_marginTop="16dp"-->
-    <!--app:layout_constraintBottom_toTopOf="@+id/bottom_nav"-->
-    <!--app:layout_constraintEnd_toEndOf="parent"-->
-    <!--app:layout_constraintStart_toStartOf="parent"-->
-    <!--app:layout_constraintTop_toBottomOf="@+id/youtube_logo" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

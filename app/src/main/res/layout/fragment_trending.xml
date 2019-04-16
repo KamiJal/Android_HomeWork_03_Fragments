@@ -2,92 +2,105 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
+    android:id="@+id/fragment_trending"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TrendingFragment"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".fragments.TrendingFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/fragment_trending_filter_wrapper"
+        android:id="@+id/fragment_trending_top_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/top_bar_size"
         android:orientation="horizontal"
-        android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/fragment_trending_img_music"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:contentDescription="@string/fragment_trending_music"
-            android:src="@drawable/ic_library_music"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_trending_top_bar_content_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/top_bar_content_wrapper_padding"
+            android:paddingRight="@dimen/top_bar_content_wrapper_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/fragment_trending_img_gaming"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:contentDescription="@string/fragment_trending_gaming"
-            android:src="@drawable/ic_games"
-            app:layout_constraintStart_toEndOf="@+id/fragment_trending_img_music"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/fragment_trending_img_music"
+                android:layout_width="@dimen/trending_top_bar_logo_size"
+                android:layout_height="@dimen/trending_top_bar_logo_size"
+                android:contentDescription="@string/fragment_trending_music"
+                android:src="@drawable/ic_library_music"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/fragment_trending_img_movies"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:contentDescription="@string/fragment_trending_movies"
-            android:src="@drawable/ic_movie"
-            app:layout_constraintStart_toEndOf="@+id/fragment_trending_img_gaming"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/fragment_trending_img_gaming"
+                android:layout_width="@dimen/trending_top_bar_logo_size"
+                android:layout_height="@dimen/trending_top_bar_logo_size"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/fragment_trending_gaming"
+                android:src="@drawable/ic_games"
+                app:layout_constraintStart_toEndOf="@+id/fragment_trending_img_music"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/fragment_trending_txt_music"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/music"
-            android:textSize="12sp"
-            app:fontFamily="sans-serif-light"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_trending_img_music"
-            app:layout_constraintStart_toStartOf="@+id/fragment_trending_img_music"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_trending_img_music" />
+            <ImageView
+                android:id="@+id/fragment_trending_img_movies"
+                android:layout_width="@dimen/trending_top_bar_logo_size"
+                android:layout_height="@dimen/trending_top_bar_logo_size"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/fragment_trending_movies"
+                android:src="@drawable/ic_movie"
+                app:layout_constraintStart_toEndOf="@+id/fragment_trending_img_gaming"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/fragment_trending_txt_gaming"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/gaming"
-            android:textSize="12sp"
-            app:fontFamily="sans-serif-light"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_trending_img_gaming"
-            app:layout_constraintStart_toStartOf="@+id/fragment_trending_img_gaming"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_trending_img_gaming" />
+            <TextView
+                android:id="@+id/fragment_trending_txt_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music"
+                android:textSize="@dimen/trending_top_bar_text_size"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_trending_img_music"
+                app:layout_constraintStart_toStartOf="@+id/fragment_trending_img_music"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_trending_img_music" />
 
-        <TextView
-            android:id="@+id/fragment_trending_txt_movies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/movies"
-            android:textSize="12sp"
-            app:fontFamily="sans-serif-light"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_trending_img_movies"
-            app:layout_constraintStart_toStartOf="@+id/fragment_trending_img_movies"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_trending_img_movies" />
+            <TextView
+                android:id="@+id/fragment_trending_txt_gaming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gaming"
+                android:textSize="@dimen/trending_top_bar_text_size"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_trending_img_gaming"
+                app:layout_constraintStart_toStartOf="@+id/fragment_trending_img_gaming"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_trending_img_gaming" />
+
+            <TextView
+                android:id="@+id/fragment_trending_txt_movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movies"
+                android:textSize="@dimen/trending_top_bar_text_size"
+                app:fontFamily="sans-serif-light"
+                app:layout_constraintEnd_toEndOf="@+id/fragment_trending_img_movies"
+                app:layout_constraintStart_toStartOf="@+id/fragment_trending_img_movies"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_trending_img_movies" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fragment_trending_recycler_view"
+        android:id="@+id/fragment_trending_video_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_trending_filter_wrapper" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_trending_top_bar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

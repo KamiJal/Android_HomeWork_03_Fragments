@@ -19,4 +19,6 @@
     <string name="music">Music</string>
     <string name="gaming">Gaming</string>
     <string name="movies">Movies</string>
+    <string name="channel_logo">Channel Logo</string>
+    <string name="all">ALL</string>
 </resources>

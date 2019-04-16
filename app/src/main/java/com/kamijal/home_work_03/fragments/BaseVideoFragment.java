@@ -47,10 +47,10 @@ public abstract class BaseVideoFragment extends Fragment implements Observer<Lis
         switch (this.TAG) {
             default:
             case "HomeFragment":
-                recyclerViewId = R.id.fragment_home_recycler_view;
+                recyclerViewId = R.id.fragment_home_video_recycler_view;
                 break;
             case "TrendingFragment":
-                recyclerViewId = R.id.fragment_trending_recycler_view;
+                recyclerViewId = R.id.fragment_trending_video_recycler_view;
                 break;
         }
 
