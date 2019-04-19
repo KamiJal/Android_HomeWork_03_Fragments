@@ -5,13 +5,10 @@
     <string name="subscriptions">Subscriptions</string>
     <string name="inbox">Inbox</string>
     <string name="library">Library</string>
-
     <string name="item_video_preview">Item Video Preview</string>
     <string name="item_video_channel_owner_logo">Item Video Channel Owner Logo</string>
     <string name="item_video_more_actions">Item Video More Actions</string>
     <string name="youtube_logo">Youtube Logo</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="fragment_trending_music">Fragment Trending Music</string>
     <string name="fragment_trending_gaming">Fragment Trending Gaming</string>
     <string name="fragment_trending_movies">Fragment Trending Movies</string>
@@ -25,4 +22,19 @@
     <string name="item_notification_channel_logo">Item Notification Channel Logo</string>
     <string name="item_notification_video_preview">Item Notification Video Preview</string>
     <string name="item_notification_more_actions">Item Notification More Actions</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recent">Recent</string>
+    <string name="history">History</string>
+    <string name="my_videos">My videos</string>
+    <string name="watch_later">Watch later</string>
+    <string name="purchases">Purchases</string>
+    <string name="fragment_library_history_icon">Fragment Library History Icon</string>
+    <string name="fragment_library_my_videos_icon">Fragment Library My Videos Icon</string>
+    <string name="fragment_library_purchases_icon">Fragment Library Purchases Icon</string>
+    <string name="fragment_library_watch_later_icon">Fragment Library Watch Later Icon</string>
+    <string name="cast_connected">Cast Connected</string>
+    <string name="video_camera">Video Camera</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+    <string name="playlists_recently_added">Playlists (Recently added)</string>
 </resources>

@@ -5,7 +5,10 @@
     <dimen name="top_bar_size">100dp</dimen>
     <dimen name="top_bar_content_wrapper_padding">16dp</dimen>
     <dimen name="hr_height">0.5dp</dimen>
+    <dimen name="hr_margin">24dp</dimen>
     <dimen name="bottom_nav_text_size">10sp</dimen>
     <dimen name="item_channel_logo_size">45dp</dimen>
     <dimen name="item_channel_text_size">8sp</dimen>
+    <dimen name="fragment_library_info_block_text_size">12sp</dimen>
+    <dimen name="fragment_library_info_block_text_margin">16dp</dimen>
 </resources>

@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.kamijal.home_work_03.R;
 import com.kamijal.home_work_03.adapters.BaseVideoAdapter;
+import com.kamijal.home_work_03.adapters.LibraryVideoItemViewAdapter;
 import com.kamijal.home_work_03.adapters.NotificationItemViewAdapter;
 import com.kamijal.home_work_03.adapters.VideoItemViewAdapter;
 import com.kamijal.home_work_03.factories.ViewModelsFactory;
@@ -55,6 +56,10 @@ public abstract class BaseVideoFragment extends Fragment {
                 recyclerViewId = R.id.fragment_inbox_video_recycler_view;
                 this.adapter = new NotificationItemViewAdapter();
                 break;
+            case "LibraryFragment":
+                recyclerViewId = R.id.fragment_library_video_recycler_view;
+                this.adapter = new LibraryVideoItemViewAdapter();
+                break;
         }
 
         if (getActivity() == null)
@@ -65,7 +70,13 @@ public abstract class BaseVideoFragment extends Fragment {
         if (videoRecyclerView == null)
             return;
 
-        this.videoRecyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
+        if(recyclerViewId == R.id.fragment_library_video_recycler_view){
+            this.videoRecyclerView.setLayoutManager(new LinearLayoutManager(this.getContext(), LinearLayoutManager.HORIZONTAL, false));
+        }
+        else {
+            this.videoRecyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
+        }
+
         this.videoRecyclerView.setAdapter(adapter);
 
         this.viewModel = (BaseVideoItemViewModel) ViewModelsFactory.Create(this);

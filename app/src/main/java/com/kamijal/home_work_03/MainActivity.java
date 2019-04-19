@@ -14,6 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.kamijal.home_work_03.factories.ViewModelsFactory;
 import com.kamijal.home_work_03.fragments.HomeFragment;
 import com.kamijal.home_work_03.fragments.InboxFragment;
+import com.kamijal.home_work_03.fragments.LibraryFragment;
 import com.kamijal.home_work_03.fragments.SubscriptionsFragment;
 import com.kamijal.home_work_03.fragments.TrendingFragment;
 import com.kamijal.home_work_03.repositories.StubsRepository;
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         this.fragments.add(new TrendingFragment());
         this.fragments.add(new SubscriptionsFragment());
         this.fragments.add(new InboxFragment());
+        this.fragments.add(new LibraryFragment());
     }
 
     @Override

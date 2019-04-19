@@ -18,6 +18,6 @@ public class NotificationItemViewHolder extends BaseVideoItemViewHolder {
         this.additionalInfo = itemView.findViewById(R.id.item_notification_txt_uploaded_time);
         this.title = itemView.findViewById(R.id.item_notification_txt_title);
 
-        Log.d(TAG, "VideoItemViewHolder: created.");
+        Log.d(TAG, "NotificationItemViewHolder: created.");
     }
 }

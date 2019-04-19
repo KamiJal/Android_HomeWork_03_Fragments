@@ -1,6 +1,7 @@
 package com.kamijal.home_work_03.factories;
 
 import com.kamijal.home_work_03.viewmodels.InboxFragmentViewModel;
+import com.kamijal.home_work_03.viewmodels.LibraryFragmentViewModel;
 import com.kamijal.home_work_03.viewmodels.TrendingFragmentViewModel;
 import com.kamijal.home_work_03.repositories.RepositoryInterface;
 import com.kamijal.home_work_03.viewmodels.BaseViewModel;
@@ -21,7 +22,7 @@ public class ViewModelsFactory {
     @SuppressWarnings("ConstantConditions")
     public static BaseViewModel Create(final Fragment fragment) {
 
-        BaseViewModel model = null;
+        BaseViewModel model;
 
         switch (fragment.getClass().getSimpleName()) {
             default:
@@ -42,6 +43,7 @@ public class ViewModelsFactory {
             }
             break;
             case "LibraryFragment": {
+                model = ViewModelProviders.of(fragment).get(LibraryFragmentViewModel.class);
             }
             break;
         }
