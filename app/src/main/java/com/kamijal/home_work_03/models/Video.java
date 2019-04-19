@@ -2,30 +2,36 @@ package com.kamijal.home_work_03.models;
 
 public class Video {
     private String title;
-    private String additionalInfo;
+    private String postedTime;
+    private String numberOfViews;
     private int previewResId;
-    private int channelLogoResId;
+    private Channel channel;
 
-    public Video(String title, String additionalInfo, int previewResId, int channelLogoResId) {
+    public Video(String title, String postedTime, String numberOfViews, int previewResId, Channel channel) {
         this.title = title;
-        this.additionalInfo = additionalInfo;
+        this.postedTime = postedTime;
+        this.numberOfViews = numberOfViews;
         this.previewResId = previewResId;
-        this.channelLogoResId = channelLogoResId;
+        this.channel = channel;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public String getAdditionalInfo() {
-        return additionalInfo;
+    public String getPostedTime() {
+        return postedTime;
+    }
+
+    public String getNumberOfViews() {
+        return numberOfViews;
     }
 
     public int getPreviewResId() {
         return previewResId;
     }
 
-    public int getChannelLogoResId() {
-        return channelLogoResId;
+    public Channel getChannel() {
+        return channel;
     }
 }

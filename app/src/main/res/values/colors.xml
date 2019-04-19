@@ -8,4 +8,5 @@
     <color name="youtubeGreyDark">#646464</color>
     <color name="youtubeGreyMid">#7D7D7D</color>
     <color name="youtubeGreyLight">#969696</color>
+    <color name="youtubeBlack">#000000</color>
 </resources>

@@ -1,13 +1,13 @@
 package com.kamijal.home_work_03.observers;
 
-import com.kamijal.home_work_03.adapters.VideoItemViewAdapter;
+import com.kamijal.home_work_03.adapters.BaseVideoAdapter;
 import com.kamijal.home_work_03.models.Video;
 
 import java.util.List;
 
-public class VideoObserver extends BaseObserver<List<Video>, VideoItemViewAdapter> {
+public class VideoObserver extends BaseObserver<List<Video>, BaseVideoAdapter> {
 
-    public VideoObserver(VideoItemViewAdapter adapter) {
+    public VideoObserver(BaseVideoAdapter adapter) {
         super(adapter);
     }
 

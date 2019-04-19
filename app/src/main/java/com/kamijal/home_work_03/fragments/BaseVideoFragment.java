@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.kamijal.home_work_03.R;
+import com.kamijal.home_work_03.adapters.BaseVideoAdapter;
+import com.kamijal.home_work_03.adapters.NotificationItemViewAdapter;
 import com.kamijal.home_work_03.adapters.VideoItemViewAdapter;
 import com.kamijal.home_work_03.factories.ViewModelsFactory;
 import com.kamijal.home_work_03.observers.VideoObserver;
@@ -20,13 +22,11 @@ public abstract class BaseVideoFragment extends Fragment {
 
     private RecyclerView videoRecyclerView;
     private BaseVideoItemViewModel viewModel;
-    private final VideoItemViewAdapter adapter;
+    private BaseVideoAdapter adapter;
 
     public BaseVideoFragment() {
         this.TAG = this.getClass().getSimpleName();
         Log.d(TAG, "Constructor: called.");
-
-        this.adapter = new VideoItemViewAdapter();
     }
 
     @Override
@@ -45,9 +45,15 @@ public abstract class BaseVideoFragment extends Fragment {
             default:
             case "HomeFragment":
                 recyclerViewId = R.id.fragment_home_video_recycler_view;
+                this.adapter = new VideoItemViewAdapter();
                 break;
             case "TrendingFragment":
                 recyclerViewId = R.id.fragment_trending_video_recycler_view;
+                this.adapter = new VideoItemViewAdapter();
+                break;
+            case "InboxFragment":
+                recyclerViewId = R.id.fragment_inbox_video_recycler_view;
+                this.adapter = new NotificationItemViewAdapter();
                 break;
         }
 

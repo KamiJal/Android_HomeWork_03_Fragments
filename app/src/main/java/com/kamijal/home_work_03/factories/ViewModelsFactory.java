@@ -1,5 +1,6 @@
 package com.kamijal.home_work_03.factories;
 
+import com.kamijal.home_work_03.viewmodels.InboxFragmentViewModel;
 import com.kamijal.home_work_03.viewmodels.TrendingFragmentViewModel;
 import com.kamijal.home_work_03.repositories.RepositoryInterface;
 import com.kamijal.home_work_03.viewmodels.BaseViewModel;
@@ -37,6 +38,7 @@ public class ViewModelsFactory {
             }
             break;
             case "InboxFragment": {
+                model = ViewModelProviders.of(fragment).get(InboxFragmentViewModel.class);
             }
             break;
             case "LibraryFragment": {

@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.kamijal.home_work_03.factories.ViewModelsFactory;
 import com.kamijal.home_work_03.fragments.HomeFragment;
+import com.kamijal.home_work_03.fragments.InboxFragment;
 import com.kamijal.home_work_03.fragments.SubscriptionsFragment;
 import com.kamijal.home_work_03.fragments.TrendingFragment;
 import com.kamijal.home_work_03.repositories.StubsRepository;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
         int position;
-        String name = null;
+        String name;
         switch (menuItem.getItemId()) {
             default:
             case R.id.menu_home: {
@@ -68,10 +69,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             break;
             case R.id.menu_inbox: {
                 position = 3;
+                name = "menu_inbox";
             }
             break;
             case R.id.menu_library: {
                 position = 4;
+                name = "menu_library";
             }
             break;
         }
@@ -85,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         this.fragments.add(new HomeFragment());
         this.fragments.add(new TrendingFragment());
         this.fragments.add(new SubscriptionsFragment());
+        this.fragments.add(new InboxFragment());
     }
 
     @Override

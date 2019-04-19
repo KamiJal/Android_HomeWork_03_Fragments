@@ -12,7 +12,7 @@ import com.kamijal.home_work_03.models.Video;
 
 import androidx.annotation.NonNull;
 
-public class VideoItemViewAdapter extends BaseAdapter<Video> {
+public class VideoItemViewAdapter extends BaseVideoAdapter {
 
     public VideoItemViewAdapter() {
         Log.d(TAG, "Constructor: called.");
@@ -22,10 +22,13 @@ public class VideoItemViewAdapter extends BaseAdapter<Video> {
     public void onBindViewHolder(@NonNull BaseItemViewHolder holder, int position) {
         Log.d(TAG, "onBindViewHolder: called; position: " + position + ".");
 
-        ((VideoItemViewHolder) holder).setTitle(dataSet.get(position).getTitle());
-        ((VideoItemViewHolder) holder).setAdditionalInfo(dataSet.get(position).getAdditionalInfo());
-        ((VideoItemViewHolder) holder).setPreviewImage(dataSet.get(position).getPreviewResId());
-        ((VideoItemViewHolder) holder).setChannelOwnerLogo(dataSet.get(position).getChannelLogoResId());
+        String delimiter = " • ";
+        Video video = dataSet.get(position);
+
+        ((VideoItemViewHolder) holder).setTitle(video.getTitle());
+        ((VideoItemViewHolder) holder).setAdditionalInfo(video.getChannel().getTitle() + delimiter + video.getNumberOfViews() + delimiter + video.getPostedTime());
+        ((VideoItemViewHolder) holder).setPreviewImage(video.getPreviewResId());
+        ((VideoItemViewHolder) holder).setChannelOwnerLogo(video.getChannel().getChannelLogoResId());
         ((VideoItemViewHolder) holder).setMoreActions();
     }
 

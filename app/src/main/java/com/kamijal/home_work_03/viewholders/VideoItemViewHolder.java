@@ -1,25 +1,13 @@
 package com.kamijal.home_work_03.viewholders;
 
-import android.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.kamijal.home_work_03.R;
 
 import androidx.annotation.NonNull;
 
-public class VideoItemViewHolder extends BaseItemViewHolder {
-
-    private static final String TAG = "VideoItemViewHolder";
-
-    private final ImageView preview;
-    private final ImageView channelOwnerLogo;
-    private final ImageView moreActions;
-
-    private final TextView title;
-    private final TextView additionalInfo;
+public class VideoItemViewHolder extends BaseVideoItemViewHolder {
 
     public VideoItemViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -32,35 +20,4 @@ public class VideoItemViewHolder extends BaseItemViewHolder {
 
         Log.d(TAG, "VideoItemViewHolder: created.");
     }
-
-    public void setTitle(final String title) {
-        this.title.setText(title);
-    }
-
-    public void setAdditionalInfo(final String additionalInfo) {
-        this.additionalInfo.setText(additionalInfo);
-    }
-
-    public void setMoreActions() {
-        this.moreActions.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new AlertDialog.Builder(context)
-                        .setTitle(title.getText().toString())
-                        .setMessage("more actions")
-                        .setCancelable(true)
-                        .create().show();
-            }
-        });
-    }
-
-    public void setChannelOwnerLogo(int resId) {
-        this.channelOwnerLogo.setImageResource(resId);
-    }
-
-    public void setPreviewImage(int resId) {
-        this.preview.setImageResource(resId);
-    }
-
-
 }

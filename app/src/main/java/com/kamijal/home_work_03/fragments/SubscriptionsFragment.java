@@ -6,7 +6,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,15 +18,9 @@ import com.kamijal.home_work_03.R;
 import com.kamijal.home_work_03.adapters.ChannelItemViewAdapter;
 import com.kamijal.home_work_03.adapters.VideoItemViewAdapter;
 import com.kamijal.home_work_03.factories.ViewModelsFactory;
-import com.kamijal.home_work_03.models.Channel;
-import com.kamijal.home_work_03.models.Video;
 import com.kamijal.home_work_03.observers.ChannelObserver;
 import com.kamijal.home_work_03.observers.VideoObserver;
 import com.kamijal.home_work_03.viewmodels.SubscriptionsFragmentViewModel;
-import com.kamijal.home_work_03.viewmodels.BaseVideoItemViewModel;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**

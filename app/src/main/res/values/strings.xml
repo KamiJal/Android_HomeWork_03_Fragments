@@ -12,7 +12,6 @@
     <string name="youtube_logo">Youtube Logo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment_trending_music">Fragment Trending Music</string>
     <string name="fragment_trending_gaming">Fragment Trending Gaming</string>
     <string name="fragment_trending_movies">Fragment Trending Movies</string>
@@ -21,4 +20,9 @@
     <string name="movies">Movies</string>
     <string name="channel_logo">Channel Logo</string>
     <string name="all">ALL</string>
+    <string name="messages">Messages</string>
+    <string name="notifications">Notifications</string>
+    <string name="item_notification_channel_logo">Item Notification Channel Logo</string>
+    <string name="item_notification_video_preview">Item Notification Video Preview</string>
+    <string name="item_notification_more_actions">Item Notification More Actions</string>
 </resources>
